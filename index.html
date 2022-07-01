@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Monkey Theorem Simulator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Micon.png">
+    <link rel="shortcut icon" href="Micon.png">
+</head>
+<body>
+
+    <div id="header">
+        <h1>Infinite Monkey Theorem Simulator</h1>
+    </div>
+    <hr>
+    <br><br><br>
+
+    <form class="input-box" id="input-form">
+
+        <label for="word-input">Word: </label>
+        <input type="text" class="text-input" placeholder="What is your desired word?" id="word-input" required>
+        <br>
+        <br>
+
+        <button type="submit" id="run-sim" >Run Simulation</button>
+        
+
+    </form>
+
+    <div class="simulation-box" id="simulation-box">
+        <div class="stats-box">
+            <h2>Stats:</h2>
+            <p id="time-spent">Time Elapsed:</p>
+            <p id="probability">Word probability:</p>
+            <p id="closest-word">Closest word:</p>
+            <p id="total-letters">Total letters typed:</p>
+        </div>
+
+
+        <br>
+
+        <div class="console_area">
+            <textarea name="console" id="console" cols="80" rows="20" disabled="disabled"></textarea>
+        </div>
+
+        
+    </div>
+
+    <div id="bg-modal">
+        <div id="modal">
+            <h3>This simulator is not currently supported for phones.</h3>
+            <p>Please try running on a computer or tablet.</p>
+            <p>(or resize your screen if you already are running on one of these devices)</p>
+        </div>
+    </div>
+
+    
+
+    
+
+
+
+    <!-- <a href="" class="shakesphere-mode">Shakesphere Mode</a> -->
+    <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem" id="whatis" target="_blank">What is the Infinite Monkey Theorem?</a>
+    <script src="index.js"></script>   
+</body>
+</html>
