@@ -118,7 +118,7 @@ function updateTime(){
             ms = "0"+ms;    
 	
 				
-		document.getElementById("time-spent").innerHTML = 'Time Spent: '+ hours+":"+min+":"+sec+':'+ms;
+		document.getElementById("time-spent").innerHTML = 'Time Elapsed: '+ hours+":"+min+":"+sec+':'+ms;
         document.getElementById('total-letters').innerHTML='Total letters typed: '+strokes
 
 }
