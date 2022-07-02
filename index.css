@@ -154,6 +154,7 @@ h1{
     border-color: transparent;
     scrollbar-color: transparent;
     cursor: default;
+    border-radius: 1rem;
     
 }
 
