@@ -143,6 +143,14 @@ function simulation()
         label.innerText = "The monkey found "+userWord+"!"
         document.getElementById("closest-word").innerHTML ="Closest word: "+ userWord
         simBox.appendChild(label)
+        document.getElementById('stop-sim').remove()
+       
+        const resetBtn = document.createElement('button')
+        resetBtn.innerText="Reset"
+        resetBtn.setAttribute('id','reset-sim')
+        resetBtn.setAttribute('type','button')
+        resetBtn.addEventListener('click',()=>{window.location.reload()})
+        inputForm.appendChild(resetBtn)
 
     }
 
