@@ -1,7 +1,5 @@
-# Monkey Typewriter Simulator webversion
+# Infinite Monkey Theorem Simulator
 Link: https://j10czar.github.io/InfiniteMonkeyTheoremSimulator/
-<br/>
--------------------------------------------------------------
 <br/>
 -My old java project adapted to website version
 <br/>
