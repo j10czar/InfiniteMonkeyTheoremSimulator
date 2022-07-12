@@ -8,6 +8,7 @@ var userWord = ''
 var strokes= 0
 var start
 
+var running = false
 var typewriter = ''
 
 var duration = 0
@@ -23,6 +24,7 @@ document.getElementById('input-form').addEventListener('submit', (e)=>{
         alert("Please only use letters in the word input.")
 
     }
+    else if(running)return
     else
     {
 
@@ -57,6 +59,10 @@ document.getElementById('input-form').addEventListener('submit', (e)=>{
         document.getElementById('probability').innerHTML='Word probability: '+((1/Math.pow(26,userWord.length))*100)+'%'
 
 
+        running = true
+
+
+
         runningSim = setInterval(function(){
             if(!stopped)
             {
@@ -69,7 +75,7 @@ document.getElementById('input-form').addEventListener('submit', (e)=>{
                 return
             }      
 
-        },1)
+        },0)
 
         checkWord = setInterval(function(){
             if(!stopped)
@@ -139,6 +145,7 @@ function simulation()
     if(typewriter.substring(typewriter.length-userWord.length,typewriter.length)== userWord)
     {
         stopped = true
+        running = false
         const label = document.createElement('h2')
         label.innerText = "The monkey found "+userWord+"!"
         document.getElementById("closest-word").innerHTML ="Closest word: "+ userWord
