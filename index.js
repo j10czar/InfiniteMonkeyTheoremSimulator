@@ -145,7 +145,6 @@ function simulation()
     if(typewriter.substring(typewriter.length-userWord.length,typewriter.length)== userWord)
     {
         stopped = true
-        running = false
         const label = document.createElement('h2')
         label.innerText = "The monkey found "+userWord+"!"
         document.getElementById("closest-word").innerHTML ="Closest word: "+ userWord
