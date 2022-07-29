@@ -128,6 +128,7 @@ function updateTime(){
         document.getElementById('total-letters').innerHTML='Total letters typed: '+strokes
 
 }
+//rebuild
 
 
 
