@@ -2,11 +2,14 @@ const runBtn = document.getElementById('run-sim')
 const inputForm = document.getElementById('input-form')
 const DOMconsole = document.getElementById('console')
 const simBox = document.getElementById('simulation-box')
+
+const textBox = document.querySelector(".console_box p");
 var stopped = false
 const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 var userWord = ''
 var strokes= 0
-var start
+var highlightStreak = 0
+var text= ``
 
 var running = false
 var typewriter = ''
@@ -138,6 +141,27 @@ function simulation()
     strokes++
 
     let letter = letters[parseInt(Math.random()*26)]
+
+    let highlightedSpan = `<span class='highlighted'>${letter}</span>`
+    let span = `<span>${letter}</span>`
+
+
+
+    if(letter === userWord[highlightStreak]){
+        highlightStreak++
+
+        text+=highlightedSpan
+
+        textBox.innerHTML=text
+        
+    }
+    else{
+        highlightStreak = 0
+        text+=span
+
+        textBox.innerHTML=text
+    }
+
     DOMconsole.value+=letter
     DOMconsole.scrollTop=DOMconsole.scrollHeight
 

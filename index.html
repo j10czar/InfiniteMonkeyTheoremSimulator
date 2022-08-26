@@ -19,7 +19,7 @@
 
     <form class="input-box" id="input-form">
 
-        <label for="word-input">Word: </label>
+        <label for="word-input" class="word-label">Word: </label>
         <input type="text" class="text-input" placeholder="What is your desired word?" id="word-input" required>
         <br>
         <br>
@@ -42,7 +42,9 @@
         <br>
 
         <div class="console_area">
-            <textarea name="console" id="console" cols="80" rows="20" disabled="disabled"></textarea>
+            <div id="console" class="console_box">
+                <p class="width-restriction"></p>
+            </div>
         </div>
 
         
@@ -62,7 +64,7 @@
         <p>&copy; 2022 Jason Tenczar. All rights reserved</p>
         
     </div>
-    <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem" id="whatis" target="_blank">What is the Infinite Monkey Theorem?</a>
+    <!-- <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem" id="whatis" target="_blank">What is the Infinite Monkey Theorem?</a> -->
 
     
 

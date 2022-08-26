@@ -76,6 +76,11 @@ h1{
     font-weight: 500;
     border-radius: 0.5rem;
     border: transparent 1px solid;
+    font-size: 17px;
+}
+
+.word-label{
+    font-size: 20px;
 }
 
 /* yes i know i could of done this part better lol */
@@ -139,9 +144,20 @@ h1{
 .simulation-box{
     text-align: center;
     margin: 5rem;
+    margin-top: 1rem;
     
 
 
+}
+
+.highlighted{
+    color: #7dcfff;
+}
+
+.console_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -155,7 +171,14 @@ h1{
     scrollbar-color: transparent;
     cursor: default;
     border-radius: 1rem;
+    width: 500px;
+    height: 300px;
     
+}
+
+.width-restriction{
+    width: 500px;
+    height: fit-content;
 }
 
 
@@ -163,9 +186,6 @@ h1{
     display: none;
 }
 
-#console:focus{
-    outline: none;
-}
 
 
 #bg-modal{
